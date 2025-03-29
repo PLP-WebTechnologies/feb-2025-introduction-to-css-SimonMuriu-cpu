@@ -38,6 +38,18 @@ nav a:hover {
     background-color: #3BAEAB;
 }
 
+@media (max-width: 768px) {
+    .nav ul {
+      flex-direction: column;
+      background-color: #9b111e;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 200px;
+      display: none;
+      z-index: 1;
+    }
+}
 
 .HomePage {
     background-color: #3BAEAB;
@@ -69,10 +81,11 @@ nav a:hover {
     padding: 0 20px;
 }
 #homeImage {
-    width: 60%;
-    height: 500px;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .heading {
     text-align: center;
@@ -83,17 +96,19 @@ nav a:hover {
 
 .services {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     box-shadow: #333 0px 0px 10px;
     border-radius: 20px;
-    height: 500px;
+    height: auto;
 }
 
 .services ol {
     flex: 1;
-    max-width: 30%;
+    max-width: 100%;
     text-align: left;
     font-size: 30px;
     font-weight: bold;
